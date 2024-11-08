@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Twitter Thread Automator</title>
+    <style>
+      html {
+        background: #000;
+        padding: 10px;
+      }
+
+      textarea {
+        min-width: 300px;
+        min-height: 300px;
+        resize: none;
+        background: rgb(30, 30, 30);
+        color: white;
+        font-size: large;
+        font-family: "Outfit", sans-serif;
+        padding: 10px;
+      }
+      textarea::placeholder {
+        color: white;
+        font-family: "Outfit", sans-serif;
+      }
+      .button-holder {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      button {
+        font-family: "Outfit", sans-serif;
+        margin-top: 10px;
+        padding: 8px 10px;
+        background: #1d9bf0;
+        color: white;
+        border-radius: 6px;
+        font-size: larger;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea
+      id="tweetInput"
+      placeholder="Write your entire thread here..."
+    ></textarea>
+    <div class="button-holder">
+      <button id="postThread">Post Thread</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
